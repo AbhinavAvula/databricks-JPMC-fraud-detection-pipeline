@@ -121,7 +121,7 @@ for _ in range(NUM_TRANSACTIONS):
 
 # --- Save to parquet & csv ---
 df = pd.DataFrame(transactions)
+
 df.to_parquet("transactions_raw.parquet", index=False)
-df.to_csv("transactions_raw.csv", index=False)
 
 print(df.head(5))
